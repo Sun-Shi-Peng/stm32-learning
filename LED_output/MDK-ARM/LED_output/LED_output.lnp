@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"led_output\startup_stm32f103xe.o"
+"led_output\main.o"
+"led_output\stm32f1xx_it.o"
+"led_output\stm32f1xx_hal_msp.o"
+"led_output\stm32f1xx_hal_gpio_ex.o"
+"led_output\stm32f1xx_hal.o"
+"led_output\stm32f1xx_hal_rcc.o"
+"led_output\stm32f1xx_hal_rcc_ex.o"
+"led_output\stm32f1xx_hal_gpio.o"
+"led_output\stm32f1xx_hal_dma.o"
+"led_output\stm32f1xx_hal_cortex.o"
+"led_output\stm32f1xx_hal_pwr.o"
+"led_output\stm32f1xx_hal_flash.o"
+"led_output\stm32f1xx_hal_flash_ex.o"
+"led_output\stm32f1xx_hal_exti.o"
+"led_output\system_stm32f1xx.o"
+--strict --scatter "LED_output\LED_output.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LED_output.map" -o LED_output\LED_output.axf
