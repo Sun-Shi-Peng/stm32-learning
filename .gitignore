@@ -1,0 +1,24 @@
+# 编译输出文件
+Debug/
+Release/
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+*.o
+*.d
+*.axf
+
+# Keil MDK
+*.uvoptx
+*.uvgui.*
+*.bak
+*.dep
+*.crf
+*.lnp
+*.sct
+
+# STM32CubeMX
+*.ioc.user
+.DS_Store
